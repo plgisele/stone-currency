@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Currency</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="assets/Stone.svg" class="logo" alt="logomarca da stone">
+            <div class="sub-title">
+                <img src="assets/Rectangle.svg" class="currency-rec" alt="retângulo do header"> Currency
+            </div>
+        </div>
+        <div class="data">
+            <input type="text" class="data" value="dia de mês de ano | hora" readonly>
+            <p>Dados de câmbio disponibilizados pela Morningstar</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="dolar-taxa">
+            <label for="dolar">Dólar</label><br/>
+            <input type="text" name="dolar" value="$ 1,00">
+
+            <label for="taxa-estado">Taxa do Estado</label><br/>
+            <input type="text" name="dolar" placeholder="0 %">
+        </div>
+
+        <div class="tipo-compra">
+            <label for="tipo">Tipo de compra</label><br/>
+            <input type="radio" name="tipo" id="dinheiro"> Dinheiro
+            <input type="radio" name="tipo" id="cartao"> Cartão
+        </div>
+
+        <input type="submit" value="Converter" id="converter" onclick="converte()">
+
+        <div class="elipse">
+            <img src="assets/Ellipse2.svg" alt="elipse no background">
+            <img src="assets/Ellipse1.svg" alt="elipse no background">
+            <img src="assets/Ellipse4.svg" alt="elipse no background">
+            <img src="assets/Ellipse3.svg" alt="elipse no background">
+        </div>
+
+        <img src="assets/Mask.png" class="background" alt="imagem de background com notas de dólar">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
