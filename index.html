@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stone Currency</title>
 
+    <!-- importando fonte -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,12 +18,12 @@
         <div class="title">
             <img src="assets/Stone.svg" class="logo" alt="logomarca da stone">
             <div class="sub-title">
-                <img src="assets/Rectangle.svg" class="currency-rec" alt="retângulo do header"> Currency
+                <img src="assets/Rectangle.svg" class="currency-rec" alt="retângulo do header"> <span class="logo2">Currency</span>
             </div>
         </div>
         <div class="data">
-            <input type="text" class="data" value="dia de mês de ano | hora" readonly>
-            <p>Dados de câmbio disponibilizados pela Morningstar</p>
+            <input type="text" class="data" id="data-cotacao" value="14 de janeiro de 2021 | 21:00 UTC" readonly>
+            <p class="p-data">Dados de câmbio disponibilizados pela Morningstar</p>
         </div>
     </header>
 
@@ -35,9 +40,9 @@
             <label for="tipo">Tipo de compra</label><br/>
             <input type="radio" name="tipo" id="dinheiro"> Dinheiro
             <input type="radio" name="tipo" id="cartao"> Cartão
-        </div>
 
-        <input type="submit" value="Converter" id="converter" onclick="converte()">
+            <input type="submit" value="Converter" id="converter" onclick="converte()">
+        </div>
 
         <div class="elipse">
             <img src="assets/Ellipse2.svg" alt="elipse no background">
@@ -45,9 +50,9 @@
             <img src="assets/Ellipse4.svg" alt="elipse no background">
             <img src="assets/Ellipse3.svg" alt="elipse no background">
         </div>
-
-        <img src="assets/Mask.png" class="background" alt="imagem de background com notas de dólar">
     </div>
+
+    <img src="assets/Mask.png" class="background" alt="imagem de background com notas de dólar">
 
     <script src="script.js"></script>
 </body>
