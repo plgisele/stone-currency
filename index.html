@@ -28,28 +28,39 @@
     </header>
 
     <div class="container">
-        <div class="dolar-taxa">
-            <label for="dolar">Dólar</label><br/>
-            <input type="text" name="dolar" value="$ 1,00">
+        <div class="info">
+            <div class="dolar-taxa">
+                <div class="input-valor">
+                    <label for="dolar">Dólar</label>
+                    <input type="text" class="txt" name="dolar" value="$ 1,00">
+                </div>
+                
+                <div class="input-valor">
+                    <label for="taxa-estado">Taxa do Estado</label>
+                    <input type="text" class="txt" name="dolar" placeholder="0 %">  
+                </div>            
+            </div>
+    
+            <div class="tipo-compra">
+                <label for="tipo">Tipo de compra</label><br/>
+                
+                <input type="radio" class="radio" name="tipo" id="dinheiro" value="dinheiro" checked="checked"> 
+                <label for="dinheiro" class="radio-label">Dinheiro</label>
 
-            <label for="taxa-estado">Taxa do Estado</label><br/>
-            <input type="text" name="dolar" placeholder="0 %">
-        </div>
-
-        <div class="tipo-compra">
-            <label for="tipo">Tipo de compra</label><br/>
-            <input type="radio" name="tipo" id="dinheiro"> Dinheiro
-            <input type="radio" name="tipo" id="cartao"> Cartão
+                <input type="radio" class="radio" name="tipo" id="cartao" value="cartao" checked="checked">
+                <label for="cartao" class="radio-label">Cartão</label>
+            </div>
 
             <input type="submit" value="Converter" id="converter" onclick="converte()">
         </div>
 
-        <div class="elipse">
-            <img src="assets/Ellipse2.svg" alt="elipse no background">
-            <img src="assets/Ellipse1.svg" alt="elipse no background">
-            <img src="assets/Ellipse4.svg" alt="elipse no background">
-            <img src="assets/Ellipse3.svg" alt="elipse no background">
+        <div id="elipses">
+            <img src="assets/Ellipse2.svg" class="elipse" alt="elipse no background">
+            <img src="assets/Ellipse1.svg" class="elipse" alt="elipse no background">
+            <img src="assets/Ellipse4.svg" class="elipse" alt="elipse no background">
+            <img src="assets/Ellipse3.svg" class="elipse" alt="elipse no background">
         </div>
+        
     </div>
 
     <script src="script.js"></script>

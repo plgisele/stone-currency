@@ -65,3 +65,80 @@ header {
     width: 100vw;
     height: 100vh;
 }
+
+.info {
+    position: absolute;
+    top: 30%;
+    left: 4.5%;
+}
+
+.input-valor {
+    display: flex;
+    flex-direction: column;
+}
+
+.dolar-taxa {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+
+label {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #2E3742;
+}
+
+.txt {
+    margin-right: 50px;
+    width: 168px;
+    height: 56px;
+    border: 1px solid #D7E0EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 8px 4px 0px #0D111B14;
+    padding: 16px;
+}
+
+.radio-label {
+    margin-right: 16px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.radio {
+    width: 24px;
+    height: 24px;
+    margin-top: 16px;
+    margin-right: 8px;
+    margin-bottom: 32px;
+}
+
+.radio:checked {
+    background: #008B57;
+}
+
+#converter {
+    width: 149px;
+    height: 56px;
+    background: #8C9CAD;
+    border: 1px solid #008B57;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+#elipses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    margin-left: 37%;
+}
+
+.elipse {
+    position: absolute;
+}
