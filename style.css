@@ -141,3 +141,38 @@ label {
 .elipse {
     position: absolute;
 }
+
+/* Página resultado */
+
+.result {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 200px;
+    left: 64px;
+}
+
+.comentarios {
+    font-size: 1.4rem;
+    color: #6E7E90;
+    position: absolute;
+    top: 300px;
+    left: 64px;
+}
+
+#tipo,
+#taxa-estado,
+#valor-dolar {
+    font-size: 1.4rem;
+    border: none;
+    color: #6E7E90;
+}
+
+#tipo {
+    width: 50px;
+}
+
+#taxa-estado,
+#valor-dolar {
+    width: 40px;
+}

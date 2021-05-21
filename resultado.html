@@ -28,26 +28,26 @@
     </header>
 
     <div class="container">
-        <div class="result">
-            <button id="volta">Voltar</button>
-
-            <label for="resultado">O resultado do cálculo é</label>
-            <input type="text" id="resultado-calculo" readonly>
-        </div>
-
-        <div class="comentarios">
-            <span class="comment">
-                Compra no <input type="text" id="tipo"> e taxa de <input type="text" id="taxa-estado">
-            </span>
-            <br>
-            <span class="comment"> Cotação do dólar: $ 1,00 = </span> <input type="text" id="valor-dolar">
-        </div>
-
         <div id="elipses">
             <img src="assets/Ellipse2.svg" class="elipse" alt="elipse no background">
             <img src="assets/Ellipse1.svg" class="elipse" alt="elipse no background">
             <img src="assets/Ellipse4.svg" class="elipse" alt="elipse no background">
             <img src="assets/Ellipse3.svg" class="elipse" alt="elipse no background">
+        </div>
+
+        <div class="result">
+            <button id="volta">Voltar</button>
+
+            <label for="resultado">O resultado do cálculo é</label>
+            <input type="text" id="resultado-calculo" value="R$ 240,56" readonly>
+        </div>
+
+        <div class="comentarios">
+            <span class="comment">
+                Compra no <input type="text" id="tipo" value="dinheiro" readonly> e taxa de <input type="text" id="taxa-estado" value="5,3%" readonly>
+            </span>
+            <br><br>
+            <span class="comment"> Cotação do dólar: $ 1,00 = $ </span> <input type="text" id="valor-dolar" value="5,20" readonly>
         </div>
         
     </div>
