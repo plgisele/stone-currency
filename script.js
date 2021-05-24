@@ -47,18 +47,16 @@ function converte() {
         alert("Por favor, preencha todos os campos.")
     } else {
         window.location.href = "resultado.html";
-
-        let resultado = document.getElementById("resultado-calculo");
-        resultado.value = `R$ ${convertendoDolar().toFixed(2)}`
-
-        let mostrarValor = document.getElementById("valor-dolar");
-        mostrarValor.value = valorDolar;
-
-        let mostrarTaxa = document.getElementById("taxa-de-estado");
-        mostrarTaxa.value = `${mostrarTaxa}%`;
     }
 }
 
+let resultado = document.getElementById("resultado-calculo");
+resultado.value = `R$ ${convertendoDolar().toFixed(2)}`
 
+let mostrarValor = document.getElementById("valor-dolar");
+mostrarValor.value = valorDolar;
+
+let mostrarTaxa = document.getElementById("taxa-de-estado");
+mostrarTaxa.value = `${mostrarTaxa}%`;
 
 
