@@ -31,9 +31,33 @@ function dataHora() {
 let cotacaoDoDia = document.getElementById("data-cotacao");
 cotacaoDoDia.value = dataHora();
 
+// Cálculo do valor inserido do dólar + Taxa do estado
 
-//
+let valorDigitado = document.getElementById("valor-para-converter");
+let taxaEstado = document.getElementById("taxa-do-estado");
 
+function convertendoDolar() {
+    let valorConvertido = valorDigitado * valorDolar;
+    return valorConvertido;
+} 
+
+// Converter e mudar de tela
+function converte() {
+    if (valorDigitado.value == '' || taxaEstado.value == '') {
+        alert("Por favor, preencha todos os campos.")
+    } else {
+        window.location.href = "resultado.html";
+
+        let resultado = document.getElementById("resultado-calculo");
+        resultado.value = `R$ ${convertendoDolar().toFixed(2)}`
+
+        let mostrarValor = document.getElementById("valor-dolar");
+        mostrarValor.value = valorDolar;
+
+        let mostrarTaxa = document.getElementById("taxa-de-estado");
+        mostrarTaxa.value = `${mostrarTaxa}%`;
+    }
+}
 
 
 
